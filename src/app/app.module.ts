@@ -11,6 +11,10 @@ import { DashboardComponent } from './pages-adm/components/dashboard/dashboard.c
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HomeComponent } from './pages/shared/home/home.component';  //import Angular Material
+import {MatSidenavModule} from '@angular/material/sidenav';
+
+
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -18,12 +22,15 @@ import { HomeComponent } from './pages/shared/home/home.component';  //import An
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+    CardModule,
+    MatSidenavModule
   ],
   providers: [
     provideAnimationsAsync()

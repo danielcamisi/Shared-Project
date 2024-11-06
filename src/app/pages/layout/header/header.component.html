@@ -1,3 +1,11 @@
-<mat-toolbar>
+<mat-toolbar class="header">
     <span>First things on our project</span>
 </mat-toolbar>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav 
+    [opened]="openedsidebar" 
+    (mouseenter)="openSidebar()" 
+    (mouseleave)="closeSidebar()">
+           Start
+    </mat-sidenav>
+  </mat-sidenav-container>

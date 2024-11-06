@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+      openedsidebar = true;
 
+      openSidebar(){
+        this.openedsidebar = true;
+      }
+
+      closeSidebar(){
+        this.openedsidebar = false;
+      }
 }

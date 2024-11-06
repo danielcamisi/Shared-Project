@@ -1,0 +1,20 @@
+.header {
+  position: fixed; /* Use fixed se quiser que o header esteja sempre visível no topo */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Certifique-se de que o header está acima do sidenav */
+}
+
+.sidenav-container {
+  margin-top: 64px; /* Ajuste conforme a altura do header */
+  flex: 1; /* Permitir que o sidenav-container cresça conforme necessário */
+  display: flex;
+}
+
+/* Ajuste para dispositivos móveis se necessário */
+@media (max-width: 599px) {
+  .sidenav-container {
+      margin-top: 56px; /* Altura padrão do mat-toolbar em dispositivos móveis */
+  }
+}
